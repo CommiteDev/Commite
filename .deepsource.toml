@@ -1,0 +1,16 @@
+version = 1
+
+[[analyzers]]
+name = "terraform"
+enabled = true
+
+[[analyzers]]
+name = "shell"
+enabled = true
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["vue"]
