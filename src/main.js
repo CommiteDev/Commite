@@ -13,7 +13,7 @@ app.use(router);
 
 app.use(VueGtag, {
   config: {
-    id: process.env.VUE_APP_GA_ID,
+    id: import.meta.env.VUE_APP_GA_ID,
   },
 });
 
