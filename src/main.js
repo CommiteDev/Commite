@@ -13,8 +13,8 @@ app.use(router);
 
 app.use(VueGtag, {
   config: {
-    id: import.meta.env.VUE_APP_GA_ID,
+    id: "G-PVKT0CLN92",
   },
-});
+},router);
 
 app.mount("#app");
