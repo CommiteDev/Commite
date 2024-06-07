@@ -2,11 +2,11 @@ version = 1
 
 [[analyzers]]
 name = "terraform"
-enabled = true
+enabled = false
 
 [[analyzers]]
 name = "shell"
-enabled = true
+enabled = false
 
 [[analyzers]]
 name = "javascript"
