@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Build the Application
-        run: npm run build
+        run: npm run generate
 
       - name: Upload Build Directory
         uses: actions/upload-artifact@v3

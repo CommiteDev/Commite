@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "class", // or 'media' or 'class'
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+    "./node_modules/flowbite/**/*.{js,ts}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          100: "#F0F4FF",
+          200: "#D9E2FF",
+          300: "#A6C1FF",
+          400: "#598BFF",
+          500: "#3366FF",
+          600: "#254EDB",
+          700: "#1939B7",
+          800: "#102693",
+          900: "#091A7A",
+        },
+      },
+    },
+    fontFamily: {
+      body: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+      sans: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+    },
+  },
+  plugins: [require("flowbite/plugin")],
+};

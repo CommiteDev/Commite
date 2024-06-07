@@ -1,29 +1,38 @@
 {
-  "name": "commitefront",
-  "version": "0.0.0",
+  "name": "commite",
+  "version": "0.0.1",
+  "homepage": "https://www.commite.dev/",
+  "license":"CC BY-NC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CommiteDev/Commite.git"
+  },
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test:unit": "vitest --environment jsdom --root src/",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "pinia": "^2.0.23",
-    "vue": "^3.2.41",
-    "vue-gtag": "^2.0.1",
-    "vue-router": "^4.1.5"
+    "@nuxt/eslint": "^0.3.13",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "flowbite": "^2.3.0",
+    "nuxt": "^3.11.2",
+    "nuxt-gtag": "^2.0.6",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.4",
-    "@vitejs/plugin-vue": "^3.1.2",
-    "@vue/eslint-config-prettier": "^7.0.0",
-    "@vue/test-utils": "^2.1.0",
-    "eslint": "^8.22.0",
-    "eslint-plugin-vue": "^9.3.0",
-    "jsdom": "^20.0.1",
-    "prettier": "^2.7.1",
-    "vite": "^3.1.8",
-    "vitest": "^0.24.3"
+    "nuxt-icon": "^0.6.10"
+  },
+  "engines": {
+    "node": "20.14.0"
   }
 }
