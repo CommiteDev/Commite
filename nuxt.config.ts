@@ -38,8 +38,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     'nuxt-gtag',
     '@nuxtjs/web-vitals',
-    '@nuxtjs/color-mode',
-    '@pinia/nuxt'
+    '@nuxtjs/color-mode'
   ],
   gtag: {
     id: process.env.NUXT_PUBLIC_GA_ID,
